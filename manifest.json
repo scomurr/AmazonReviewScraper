@@ -1,0 +1,23 @@
+{
+    "name": "SJM Amazon Review Scraper",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting", "downloads","storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "action": {
+        "default_title": "SJM Amazon Review Scraper",
+        "default_icon": {
+          "16": "images/icon16.png",
+          "48": "images/icon48.png",
+          "128": "images/icon128.png"
+        }
+    }
+}
+
