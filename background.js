@@ -3,7 +3,8 @@ const prompt = `I am going to paste in a bunch of product reviews.
                 I want you to give me the top 3 pros, the top 3 cons. 
                 For each pro and con, give me the number of mentions for each in () at the beginning of the pro or con. 
                 For each pro and con, ensure it has a bold title.
-                At the end, give me the overall sentiment for the product in a professional yet engaging tone.`
+                At the end, give me the overall sentiment for the product in a professional yet engaging tone.
+                ###`
 
 chrome.action.onClicked.addListener((tab) => {
     chrome.scripting.executeScript({
