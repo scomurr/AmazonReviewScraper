@@ -112,6 +112,13 @@ if (typeof dataContainer === 'undefined') {
     myModal.appendChild(buttonWriteToDisk);
     buttonWriteToDisk.addEventListener('click', buttonHandlerWrite);
 
+    /*let buttonCopyToClipboard = document.createElement('button');
+    buttonCopyToClipboard.id = 'buttonWriteToClipboard'; 
+    buttonCopyToClipboard.textContent = 'Copy to Clipboard';
+    buttonCopyToClipboard.classList.add('btn');
+    myModal.appendChild(buttonCopyToClipboard);
+    buttonCopyToClipboard.addEventListener('click', buttonHandlerClipboard);
+    */
     scrollToNext();
   
     // Select the target div
@@ -149,6 +156,10 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         addScraped();
     }
 });
+
+function buttonHandlerClipboard() {
+
+}
 
 
 function buttonHandlerWrite() {
